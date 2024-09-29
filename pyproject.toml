@@ -1,0 +1,21 @@
+[project]
+# The name stands for "Simple Package for Learning Python Packaging"
+name = "splpp"
+version = "0.0.1"
+dynamic = ["dependencies"]
+
+[project.scripts]
+demo = "splpp.demo:main"
+
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
