@@ -8,7 +8,11 @@ int_64_info = np.iinfo(np.int64)
 
 # due to memory issues
 # 2**20 items, approx. 8 MegaBytes
-max_size = 1048576
+# max_size = 1048576
+
+# due to memory issues
+# 2**19, approx. 4 MegaBytes
+max_size = 524288
 
 
 def to_num_of_int64(gibs):
